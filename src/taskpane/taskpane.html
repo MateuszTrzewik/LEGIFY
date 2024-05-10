@@ -1,0 +1,35 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legify Task Pane Add-in</title>
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css">
+    <link href="taskpane.css" rel="stylesheet" type="text/css">
+</head>
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <h1 class="ms-font-su">LEGIFY</h1>
+    </header>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <h2 class="ms-font-xl"> </h2>
+        <p class="ms-font-l">Wpisz poniżej nr KRS:</p>
+        <input type="text" id="krsInput" class="ms-TextField-field">
+        <div id="languageButtons" class="language-buttons">
+            <button id="plButton" class="ms-Button lang-button ms-font-l">PL</button>
+            <button id="engButton" class="ms-Button lang-button ms-font-l">ENG</button>
+        </div>
+        <p id="loadingMessage" style="display: none;">Loading...</p>
+        <div id="krsData" style="display: none;">
+            <p class="ms-font-l">Company Name: <span id="companyName"></span></p>
+        </div>
+    </main>
+</body>
+
+</html>
