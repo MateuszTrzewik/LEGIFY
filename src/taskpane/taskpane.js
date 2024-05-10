@@ -397,3 +397,4 @@ async function run(nrKRS, language) {
     alert(`Wystąpił błąd: ${error.message}`);
   }
 }
+//komentarz
